@@ -16,7 +16,7 @@ import cv2
 import matplotlib.pyplot as plt
 from sklearn.manifold import TSNE
 
-data_dir = "./data4/"
+data_dir = "C:/Users/lab/Google 云端硬盘/Matlab/T1b/OverSampling/myimages"
 
 
 #--------------------------------------函数定义-----------------------------
@@ -91,7 +91,7 @@ def plot_embedding_3D(data,label,title):
 
 #主函数
 def main():
-    data, label = get_data_gray(data_dir) #根据自己的路径合理更改
+    data, label = get_data_RGB(data_dir) #根据自己的路径合理更改
     print('Begining......') #时间会较长，所有处理完毕后给出finished提示
     tsne_2D = TSNE(n_components=2, init='pca', random_state=0, verbose=1, perplexity=5, n_iter=1000, learning_rate=100) #调用TSNE
     result_2D = tsne_2D.fit_transform(data)
