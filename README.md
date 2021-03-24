@@ -1,5 +1,7 @@
 # Visualization-Tech-for-undersanding-CNN-layers
 
+新增t-SNE.ipynb可实现自定义数据降维可视化
+
 tSNE basic usage demo：
 
 Visualization01_tSNEandPCA.py
